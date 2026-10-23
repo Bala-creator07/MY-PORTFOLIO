@@ -75,6 +75,54 @@ export const resumeData = {
 
   projects: [
     {
+      id: "campus-hub",
+      title: "CAMPUS HUB",
+      subtitle: "Student Campus Management Platform",
+      description: "Comprehensive student campus platform enabling students to explore facilities, access real-time announcements, and interact with an AI campus assistant.",
+      fullDescription: "CAMPUS HUB is a centralized student campus management platform designed to help students discover and stay updated with campus life. Built using Groq AI for instant responses and Firebase for real-time notifications, it enables easy navigation of campus facilities, departmental circulars, event schedules, and direct answers to academic and campus-related queries.",
+      technologies: ["React", "Groq AI", "Firebase", "Tailwind CSS", "Llama 3.3"],
+      category: "EdTech / Campus Management",
+      github: "https://github.com/Bala-creator07",
+      featured: true,
+      highlights: [
+        "AI campus assistant powered by Groq for instantaneous student queries",
+        "Real-time circulars, department bulletins & event notifications via Firebase",
+        "Campus navigation directory helping students locate venues & facilities"
+      ]
+    },
+    {
+      id: "gatherx",
+      title: "GATHERX",
+      subtitle: "AI-Powered Event Management Platform",
+      description: "Intelligent event management ecosystem for event seekers and hosts, allowing organizers to create events and students to register effortlessly.",
+      fullDescription: "GATHERX is an AI-based event management platform that connects event hosts with student attendees. Organizers can create, publish, and manage events, hackathons, and workshops with ticket quotas, while attendees enjoy AI-driven event recommendations tailored to their skills and interests along with instant digital registration.",
+      technologies: ["React", "AI Recommendation Engine", "Firebase", "Tailwind CSS", "Node.js"],
+      category: "EventTech / AI",
+      github: "https://github.com/Bala-creator07",
+      featured: true,
+      highlights: [
+        "Comprehensive host portal to create events, set capacities & track registrations",
+        "AI-driven event recommendation engine matching student interests and skills",
+        "Instant one-click digital registration and pass generation"
+      ]
+    },
+    {
+      id: "expense-tracker",
+      title: "EXPENSE TRACKER",
+      subtitle: "AI-Powered Expense Tracking Platform",
+      description: "Personal financial tracking platform that helps users monitor daily expenses, auto-categorize spending, and gain actionable AI budget insights.",
+      fullDescription: "EXPENSE TRACKER is an AI-powered financial management platform built to help individuals monitor their day-to-day spending with ease. It features automated expense categorization, interactive visual charts of monthly spending patterns, and intelligent financial insights that help users set budgets, detect spending leaks, and build savings.",
+      technologies: ["React", "AI Financial Insights", "Chart Analytics", "Tailwind CSS", "Firebase"],
+      category: "FinTech / AI",
+      github: "https://github.com/Bala-creator07",
+      featured: true,
+      highlights: [
+        "Seamless daily expense logging with smart categorization",
+        "Interactive visual breakdown of monthly cash flow and expenditure trends",
+        "AI-powered budget threshold alerts and customized saving tips"
+      ]
+    },
+    {
       id: "ultron-ai",
       title: "ULTRON AI",
       subtitle: "Custom-Trained AI Intelligence Engine",

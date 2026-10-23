@@ -1,6 +1,18 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Cpu, HeartPulse, GraduationCap, ExternalLink, ArrowRight, Layers, Sparkles, CheckCircle2 } from 'lucide-react';
+import { 
+  Building2, 
+  CalendarCheck, 
+  Wallet, 
+  Cpu, 
+  HeartPulse, 
+  GraduationCap, 
+  ExternalLink, 
+  ArrowRight, 
+  Layers, 
+  Sparkles, 
+  CheckCircle2 
+} from 'lucide-react';
 import { GithubIcon } from './Icons';
 import { resumeData } from '../data/resumeData';
 import Modal from './Modal';
@@ -10,6 +22,12 @@ export default function Projects() {
 
   const getProjectIcon = (id) => {
     switch (id) {
+      case 'campus-hub':
+        return Building2;
+      case 'gatherx':
+        return CalendarCheck;
+      case 'expense-tracker':
+        return Wallet;
       case 'ultron-ai':
         return Cpu;
       case 'aurexia':
@@ -34,12 +52,12 @@ export default function Projects() {
             Projects & <span className="accent-gradient-text">AI Innovations</span>
           </h2>
           <p className="text-slate-400 text-base sm:text-lg max-w-2xl">
-            Selected software systems and AI models built with modern web technologies and Llama 3.3 / Groq intelligence.
+            Full-stack web platforms and AI software systems built with modern web frameworks, Firebase, and Groq / Llama 3.3 intelligence.
           </p>
         </div>
 
         {/* Projects Showcase Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {resumeData.projects.map((project, idx) => {
             const Icon = getProjectIcon(project.id);
             return (
